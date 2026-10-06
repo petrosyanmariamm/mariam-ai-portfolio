@@ -428,3 +428,31 @@ html[lang="hy"] .contact-section h2{
   }
   .process-grid-classic .product-media{padding:26px}
 }
+
+
+/* Case Study 01 — enlarge product-on-white card */
+.process-grid-classic{
+  grid-template-columns:.95fr 1.2fr 1fr;
+}
+.process-grid-classic .product-media{
+  height:520px;
+  padding:14px;
+}
+.process-grid-classic .product-media img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:center;
+  display:block;
+}
+@media(max-width:980px){
+  .process-grid-classic{
+    grid-template-columns:1fr 1.25fr;
+  }
+}
+@media(max-width:650px){
+  .process-grid-classic .product-media{
+    height:390px;
+    padding:10px;
+  }
+}
