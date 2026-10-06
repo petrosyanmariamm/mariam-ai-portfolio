@@ -488,3 +488,28 @@ html[lang="hy"] .contact-section h2{
     padding:0;
   }
 }
+
+
+/* Fix Case Study 01 video framing */
+.process-grid-classic .video-process-media{
+  position:relative;
+  overflow:hidden;
+  background:#0b0c0d;
+}
+.process-grid-classic .video-process-media video{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+}
+@media(max-width:980px){
+  .process-grid-classic .video-process-card .process-media{
+    height:520px;
+  }
+}
+@media(max-width:650px){
+  .process-grid-classic .video-process-card .process-media{
+    height:420px;
+  }
+}
