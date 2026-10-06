@@ -129,3 +129,35 @@ html[lang="hy"] .contact-section h2{
 .lang-btn:hover{color:var(--accent2)}
 
 .ticker{color:#7F7A73}
+
+
+/* Heading size refinement — Oct 2026 */
+.hero h1{
+  font-size:clamp(40px,4.6vw,64px);
+  line-height:1.04;
+}
+.section-head h2{
+  font-size:clamp(34px,4vw,52px);
+  line-height:1.08;
+}
+.contact-section h2{
+  font-size:clamp(36px,4.2vw,56px);
+  line-height:1.08;
+}
+.case-study-copy h3{
+  font-size:clamp(30px,3.2vw,42px);
+}
+.featured-video-copy h3{
+  font-size:clamp(32px,3.6vw,48px);
+}
+.about-card h2{
+  font-size:clamp(36px,3.8vw,46px);
+}
+@media(max-width:650px){
+  .hero h1{font-size:36px;line-height:1.08}
+  .section-head h2{font-size:32px}
+  .contact-section h2{font-size:34px}
+  .case-study-copy h3{font-size:30px}
+  .featured-video-copy h3{font-size:32px}
+  .about-card h2{font-size:34px}
+}
