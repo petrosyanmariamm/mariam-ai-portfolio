@@ -489,3 +489,20 @@ html[lang="hy"] .contact-section h2{
   }
 }
 
+
+
+/* Force Case Study 01 video to fully cover its frame */
+.process-grid-classic .video-process-card .video-process-media{
+  position:relative;
+  overflow:hidden;
+  background:#0b0c0d;
+}
+.process-grid-classic .video-process-card .video-process-media video{
+  position:absolute;
+  inset:0;
+  width:100% !important;
+  height:100% !important;
+  object-fit:cover !important;
+  object-position:center center !important;
+  display:block;
+}
